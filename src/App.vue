@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <testComp>hi</testComp>
     <img src="./assets/logo.png">
     <br>
     <router-link to="/">Home</router-link>
@@ -11,8 +12,14 @@
 </template>
 
 <script>
+
+import testComp from './components/testComp/index.vue';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    testComp
+  }
 }
 </script>
 
